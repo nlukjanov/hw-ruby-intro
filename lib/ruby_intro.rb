@@ -11,7 +11,7 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  arr.combination(2).find{|x,y| x+y==n}
+  arr.combination(2).any?{|x,y| x+y==n}
 end
 
 # Part 2
